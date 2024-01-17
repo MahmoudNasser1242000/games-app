@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- =========bootstrap========= -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- =========bootstrap========= -->
+
+    <!-- =========fonts========= -->
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Nerko+One&display=swap" rel="stylesheet">
+    <!-- =========fonts========= -->
+    <title>GAME REVIEWS</title>
+</head>
+
+<body>
+    <section class="games">
+        <section class="display-games container">
+            <nav class="navbar navbar-expand-lg mx-auto py-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-flex align-items-center" href="#">
+                        <img src="images/logo-sm.png" alt="logo" class="me-3">
+                        <span class="text-white">GAME REVIEWS</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end align-items-center mt-4 mt-lg-0"
+                        id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <button class="nav-link active" category="mmorpg">MMORPG</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" category="shooter">SHOOTER</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" category="sailing">SAILING</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" category="permadeath">PERMADEATH</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" category="superhero">SUPERHERO</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" category="pixel">PIXEL</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="card-group py-5 row g-4 display">
+
+            </div>
+        </section>
+
+        <section class="game-info d-none">
+            
+        </section>
+    </section>
+    <!-- =========bootstrap========= -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- =========bootstrap========= -->
+    <script src="js/handle-data.js" type="module"></script>
+    <script src="js/display-games.js" type="module"></script>
+    <script src="js/game-info.js" type="module"></script>
+</body>
+
+</html>

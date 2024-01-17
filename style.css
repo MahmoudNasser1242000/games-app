@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font: 'Courgette', cursive;
+    --second-font: 'Nerko One', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("images/super-nintendo-snes-games.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    list-style: none !important;
+}
+
+.games {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.836);
+    height: fit-content !important;
+}
+
+.display-games {
+    padding-top: 90px;
+    margin-top: 50px;
+}
+
+.display-games nav {
+    background-color: rgba(58, 73, 123, 0.658) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    width: 85% !important;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7) !important;
+}
+
+.navbar-brand img {
+    width: 45px;
+    height: 45px;
+}
+
+.navbar-brand span {
+    font-family: var(--second-font);
+    font-size: 30px;
+}
+
+.navbar-nav li button {
+    color: white !important;
+    font-family: var(--main-font);
+    font-size: 14px;
+    transition: all 0.4s;
+}
+.navbar-nav li button:hover {
+    color: dodgerblue !important;
+}
+
+.card {
+    background-color: #272b3073 !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    transition: all 1s;
+}
+.card:hover {
+    transform: scale(1.07);
+}
+
+.card img {
+    filter: grayscale(0.7);
+    transition: all 0.8s
+}
+.card:hover img {
+    filter: grayscale(0);
+}
+
+.card-body h4 {
+    font-family: var(--second-font);
+    font-size: 20px;
+}
+
+.card-body button {
+    background-color: rgb(58, 73, 123) !important;
+    border: none;
+}
+
+.card-body p {
+    font-family: var(--second-font);
+    font-size: 17px;
+}
+
+.badge {
+    background-color: #32383E !important;
+    font-family: var(--main-font);
+}
+
+.game-info {
+    position: absolute;
+    inset: 0;
+    padding-bottom: 40px;
+    background-color: rgba(58, 73, 123, 0.658);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    z-index: 100;
+}
+
+.game-info * {
+    font-family: var(--second-font);
+    color: white;
+}
+
+.game-info .close {
+    transition: all 0.5s;
+}
+.game-info .close:hover {
+    color: #FFC107;
+    cursor: pointer;
+}
+
+.game-info p:not(.desc) {
+    font-size: 20px;
+    margin-left: 0 !important;
+}
+
+.game-info p span {
+    font-size: 14px;
+}
